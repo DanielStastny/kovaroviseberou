@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kovářovi se berou</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.countdown.min.js"></script>
+
+		<style>
+		      #map {
+		        width: 100%;
+		        height: 350px;
+		        background-color: grey;
+		      }
+		</style>
+
+	</head>
+	<body>
+
+
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Eva a Pavel</h1>
+					<p>8. dubna 2017</p>
+					
+					<div id="getting-started"></div>
+					<script type="text/javascript">
+					  $("#getting-started")
+					  .countdown("2017/04/08 12:30:00", function(event) {
+					    $(this).text(
+					      event.strftime('dny %D ~ hodiny %H ~ minuty %M ~ vteřiny %S')
+					    );
+					  });
+					</script>
+					
+				</div>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Banner -->
+					<section id="intro" class="main">
+						<!-- <span class="icon fa-diamond major"></span> -->
+						<p><img src="images/Eva-Pavel.jpg" width="100%" /></p>
+						
+						<p><em>Však vy už tušíte. Rozhodli jsme se, že od <strong>8. 4. 2017</strong> zůstaneme Kovářovi na celý život.</em></p>
+						<p>
+						Jsme moc rádi, že to oslavíte s námi!
+						</p>
+
+					</section>
+
+
+
+
+					<section id="main" class="main">
+						<h2>Program</h2>
+						<p>Celé svatební veselí proběhne v <a href="http://www.jizdarna-hejtmankovice.cz" target="_blank">jízdárně Hejtmánkovice</a> u Broumova. <strong>Obřad začne ve 12:30 h</strong>. Přijeďte prosím na 11. h - chceme se s vámi přivítat. Bude na vás také čekat občerstvení.</p>
+
+						<blockquote>Slečno Kovářová, rozhodla jste se užívat manželovo příjmení...</blockquote>
+
+						<p>Po obřadu se společně vyfotíme a půjdeme na oběd.</p>
+
+						<p>Odpoledne je v plánu volná zábava (well, je to na vás), děti si budou moci zajezdit na ponících (přibalte jim pohodlné oblečení a obuv). Večer nám bude hrát živá hudba (nechte se překvapit!) - doufáme, že s námi vydržíte do pozdních nočních hodin (večerka nebude). Rozvoz pro ty, kteří budou ubytováni v okolí, máme zajištěn.</p>
+
+						<h3>Kde</h3>
+						<p>Krásné prostory <a href="http://www.jizdarna-hejtmankovice.cz" target="_blank">jízdárny Hejtmánkovice</a>. Je to fantastický konec světa, až za Broumovskými stěnami.</p>
+
+						
+
+						<h3>Svatební dary</h3>
+
+						<p>Kdybyste si náhodou lámali hlavu, čím nás obdarovat, budeme rádi za cokoliv, co se vejde do obálky ;-)</p>
+
+						<h3>Broumovsko</h3>
+
+						<p>Broumovsko je malebný a možná trochu zapomenutý kraj, který jsme si zamilovali. Jestli můžete, prodlužte si pobyt a navštivte např.</p>
+
+						<ul>
+							<li><a href="http://www.klasterbroumov.cz">Klášter Broumov</a></li>
+							<li><a href="http://www.pivovarbroumov.cz">Pivovar Opat</a></li>
+							<li><a href="http://www.broumovskesteny.cz">Broumovské stěny</a></li>
+							<li><a href="http://www.skaly-adrspach.cz/teplicke-skaly.php">Adršpašsko-teplické skály</a></li>
+							<li><a href="http://www.region-adrspach.cz/turisticke-zajimavosti/zajimava-mista/bludne-skaly/">Bludné skály</a></li>
+							<li><a href="http://www.region-adrspach.cz/tipy-na-vylety/zajimava-mista/gory-stolowe/">Gory Stolowe</a>
+							<li><a href="http://www.region-adrspach.cz/turisticke-zajimavosti/zajimava-mista/kudowa-zdroj/">Lázně Kudowa zdrój</a></li>
+
+						</ul>
+						
+												
+					</section>
+
+					<div id="map"></div>
+					    <script>
+					      function initMap() {
+					        var hejtmankovice = {lat: 50.604194, lng: 16.288614};
+					        var map = new google.maps.Map(document.getElementById('map'), {
+					          zoom: 4,
+					          center: hejtmankovice
+					        });
+					        var marker = new google.maps.Marker({
+					          position: hejtmankovice,
+					          map: map
+					        });
+					      }
+					    </script>
+
+					    <script async defer
+					    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArfUlEC38arhM-RmQstnWKS_ASjvEkNYw&callback=initMap">
+					    </script>
+
+				<!-- CTA -->
+					<section id="cta" class="main special">
+						<h2>Závěrem</h2>
+						<p>Eva a Pavel Kovářovi. Potkali jsme se před více než 4mi lety na oslavě narozenin Lenky a Oťase ve mlejně. Nějaký čas už spolu spokojeně bydlíme v Praze-Kobylisích spolu s naším neposedným a úžasným pejskem - Black Bandits Twist.</p>
+						<ul class="actions">
+							<li><a href="mailto:evcakovarova@gmail.com" class="button big">Máte dotaz? Napište nám</a></li>
+						</ul>						
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p>2017</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
